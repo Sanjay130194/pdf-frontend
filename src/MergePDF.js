@@ -9,7 +9,7 @@ function MergePDF() {
       formData.append("files", file);
     }
     try {
-      const response = await axios.post('https://your-backend-url/merge', formData);
+      const response = await axios.post('https://pdf-backend-cp42.onrender.com/merge', formData);
       alert('Merged PDF ready: ' + response.data.filename);
     } catch (error) {
       console.error('Error merging PDFs', error);
